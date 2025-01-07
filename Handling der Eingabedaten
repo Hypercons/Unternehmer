@@ -1,0 +1,12 @@
+document.getElementById('entry-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const entry = {
+        name: document.getElementById('name').value,
+        industry: document.getElementById('industry').value,
+        location: document.getElementById('location').value,
+        revenue: document.getElementById('revenue').value,
+    };
+    console.log(entry); // Hier: In Datenbank speichern (z. B. mit API).
+    alert("Eintrag erfolgreich gespeichert!");
+    window.location.href = "dashboard.html";
+});
